@@ -6,6 +6,7 @@ import About from '../sections/About';
 import Projects from '../sections/Projects';
 import Writing from '../sections/Writing';
 import Footer from '../components/Footer';
+import Skills from '../sections/Skills';
 
 const IndexPage = () => (
   <Layout>

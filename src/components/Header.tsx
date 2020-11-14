@@ -23,7 +23,13 @@ const Header = () => {
           {sections
             .filter(({ id }) => id !== 'home')
             .map(({ id, onClick, selected }) => (
-              <Box key={id} ml={[2, 3]} color="background" fontSize={[2, 3]}>
+              <Box
+                style={{ outline: 'none' }}
+                key={id}
+                ml={[2, 3]}
+                color="background"
+                fontSize={[2, 3]}
+              >
                 <Link onClick={onClick} selected={selected} tabIndex={0}>
                   {capitalize(id)}
                 </Link>
@@ -40,7 +46,7 @@ const HomeLink = () => {
   const { onClick } = useScrollSection('home');
 
   return (
-    <Button onClick={onClick} variant="empty">
+    <Button style={{ outline: 'none' }} onClick={onClick} variant="empty">
       <Flex justifyContent="center">
         <Image
           src={profile.bigIcon.src}

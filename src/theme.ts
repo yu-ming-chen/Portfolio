@@ -16,9 +16,12 @@ const theme: Theme = {
     gray: '#ddd',
     text: '#333333',
 
-    primary: '#7c37ad',
-    secondary: '#ff4081',
-    highlight: '#ff79b0',
+    primary: '#123c69',
+    secondary: '#edc7b7',
+    highlight: '#ac3b61',
+    // primary: '#7c37ad',
+    // secondary: '#ff4081',
+    // highlight: '#ff79b0',
   },
   queries: {
     xs: '@media screen and (max-width: 40em)',

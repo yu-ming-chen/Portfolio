@@ -43,9 +43,9 @@ const Project = ({
             <Box mx={1} fontSize={4}>
               <SocialLink name="Repository" icon="github" url={repository} />
             </Box>
-            <Box mx={1} fontSize={4}>
+            {/* <Box mx={1} fontSize={4}>
               <SocialLink name="Homepage" icon="globe" url={homepage} />
-            </Box>
+            </Box> */}
           </Flex>
           <ImageLabel bg="primary" color="white" position="bottom-right" round>
             {type}

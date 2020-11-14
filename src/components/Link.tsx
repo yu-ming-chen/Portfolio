@@ -8,6 +8,7 @@ type Props = {
 
 const Link = styled.a<Props>`
   text-decoration: none;
+  outline: none;
   position: relative;
   margin-bottom: 0;
   padding-bottom: 5px;

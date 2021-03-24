@@ -18,6 +18,7 @@ import {
   faEnvelope,
   faCoffee,
   prefix as basePrefix,
+  faFile,
 } from '@fortawesome/free-solid-svg-icons';
 
 export const loadIcons = () =>
@@ -30,6 +31,7 @@ export const loadIcons = () =>
     faEnvelope,
     faCoffee,
     faBehance,
+    faFile,
   );
 
 export const getIconDefinition = (

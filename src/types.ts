@@ -19,9 +19,23 @@ export type Project = {
   logo: Image;
 };
 
+export type useWorkExperience = {
+  name: string;
+  description: string;
+  homepage: string;
+  repository: string;
+  type: string;
+  publishedDate: string;
+  logo: Image;
+};
+
 export type AboutMe = {
   markdown: string;
   profile: Image;
+};
+
+export type Experience = {
+  markdown: string;
 };
 
 export type SocialLink = {

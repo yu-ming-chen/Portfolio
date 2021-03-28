@@ -6,14 +6,14 @@ import { Fade } from 'react-awesome-reveal';
 import Section from '../components/Section';
 import Triangle from '../components/Triangle';
 import markdownRenderer from '../components/MarkdownRenderer';
-import { useSkillsQuery } from '../queries/useSkillsQuery';
+import { useEducationQuery } from '../queries/useEducationQuery';
 
-const Skills = () => {
-  const { markdown } = useSkillsQuery();
+const Education = () => {
+  const { markdown } = useEducationQuery();
 
   return (
-    <Section.Container id="Skills" Background={Background}>
-      <Section.Header name="Skills" icon="⚙️" label="file" />
+    <Section.Container id="education" Background={Background}>
+      <Section.Header name="Education" icon="🏫" label="file" />
       <Flex justifyContent="center" alignItems="center" flexWrap="wrap">
         <Box width={[1, 1, 4 / 6]} px={[1, 2, 4]} mt={2}>
           <Fade direction="down" triggerOnce>
@@ -67,4 +67,4 @@ const Background = () => (
   </>
 );
 
-export default Skills;
+export default Education;

@@ -38,6 +38,14 @@ export type Experience = {
   markdown: string;
 };
 
+export type Education = {
+  markdown: string;
+};
+
+export type Skills = {
+  markdown: string;
+};
+
 export type SocialLink = {
   url: string;
   name: string;

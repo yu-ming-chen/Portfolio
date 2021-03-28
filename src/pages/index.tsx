@@ -8,13 +8,16 @@ import Writing from '../sections/Writing';
 import Footer from '../components/Footer';
 import Skills from '../sections/Skills';
 import Experience from '../sections/Experience';
+import Education from '../sections/Education';
 
 const IndexPage = () => (
   <Layout>
     <Header />
     <Landing />
     <About />
+    <Education />
     <Experience />
+    <Skills />
     <Projects />
     {/* <Writing /> */}
     <Footer />

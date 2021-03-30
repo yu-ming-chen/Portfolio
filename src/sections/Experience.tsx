@@ -46,23 +46,24 @@ const ProfilePicture = styled(Image)`
 const Background = () => (
   <>
     <Triangle
+      color="muted"
+      height={['15vh', '10vh']}
+      width={['100vw', '100vw']}
+      position="top-left"
+    />
+
+    <Triangle
       color="secondary"
-      height={['50vh', '20vh']}
-      width={['50vw', '50vw']}
+      height={['50vh', '40vh']}
+      width={['70vw', '40vw']}
       position="bottom-left"
     />
 
     <Triangle
       color="primary"
-      height={['20vh', '40vh']}
-      width={['75vw', '70vw']}
-      position="top-right"
-    />
-
-    <Triangle
-      color="muted"
-      height={['25vh', '20vh']}
+      height={['40vh', '15vh']}
       width={['100vw', '100vw']}
+      position="bottom-right"
     />
   </>
 );

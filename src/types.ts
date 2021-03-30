@@ -1,4 +1,5 @@
 import { IconName } from '@fortawesome/fontawesome-svg-core';
+import { SkillBarSkill } from 'react-skillbars';
 
 export type Image = {
   src: string;
@@ -17,6 +18,11 @@ export type Project = {
   type: string;
   publishedDate: string;
   logo: Image;
+};
+
+export type SkillsCard = {
+  name: string;
+  skills: SkillBarSkill[];
 };
 
 export type useWorkExperience = {

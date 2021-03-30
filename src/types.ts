@@ -25,6 +25,15 @@ export type SkillsCard = {
   skills: SkillBarSkill[];
 };
 
+export declare type SkillsBar = {
+  type: string;
+  level: number;
+};
+
+export type SkillsBars = {
+  skill: SkillsBar[];
+};
+
 export type useWorkExperience = {
   name: string;
   description: string;

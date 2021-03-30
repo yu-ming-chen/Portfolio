@@ -7,6 +7,7 @@ import styled from 'styled-components';
 import { SkillsCard as ProjectType } from '../types';
 import { Card } from './Card';
 import SkillBar from 'react-skillbars';
+import SkillBars from './SkillBars';
 import { hideText } from 'polished';
 import LinearProgress from '@material-ui/core/LinearProgress';
 import {
@@ -53,7 +54,7 @@ const SkillsCard = ({ name, skills }: Props) => (
           </Title>
         </span>
         <SkillContainer>
-          <BorderLinearProgress variant="determinate" value={50} />
+          <SkillBars skill={skills}></SkillBars>
           {/* <SkillBar skills={skills} colors={colors} height={17} /> */}
         </SkillContainer>
       </TextContainer>

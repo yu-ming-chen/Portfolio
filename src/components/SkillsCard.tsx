@@ -8,6 +8,13 @@ import { SkillsCard as ProjectType } from '../types';
 import { Card } from './Card';
 import SkillBar from 'react-skillbars';
 import { hideText } from 'polished';
+import LinearProgress from '@material-ui/core/LinearProgress';
+import {
+  makeStyles,
+  createStyles,
+  withStyles,
+  Theme,
+} from '@material-ui/core/styles';
 
 type Props = ProjectType;
 
@@ -19,6 +26,23 @@ const colors = {
   },
 };
 
+const BorderLinearProgress = withStyles((theme: Theme) =>
+  createStyles({
+    root: {
+      height: 10,
+      borderRadius: 5,
+    },
+    colorPrimary: {
+      backgroundColor:
+        theme.palette.grey[theme.palette.type === 'light' ? 200 : 700],
+    },
+    bar: {
+      borderRadius: 5,
+      backgroundColor: '#1a90ff',
+    },
+  }),
+)(LinearProgress);
+
 const SkillsCard = ({ name, skills }: Props) => (
   <Card p={0}>
     <Flex>
@@ -29,7 +53,8 @@ const SkillsCard = ({ name, skills }: Props) => (
           </Title>
         </span>
         <SkillContainer>
-          <SkillBar skills={skills} colors={colors} height={17} />
+          <BorderLinearProgress variant="determinate" value={50} />
+          {/* <SkillBar skills={skills} colors={colors} height={17} /> */}
         </SkillContainer>
       </TextContainer>
 
